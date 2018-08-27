@@ -1,0 +1,30 @@
+{
+  "name": "get-tweets",
+  "version": "1.0.0",
+  "description": "Scrape tweets from the user Timeline",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskian/get-tweets.git"
+  },
+  "keywords": [
+    "twitter",
+    "tweets"
+  ],
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "engines": {
+    "node": "^6.9.0 || ^8.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mskian/get-tweets/issues"
+  },
+  "homepage": "https://github.com/mskian/get-tweets/#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "twitter": "^1.7.1"
+  }
+}
