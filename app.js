@@ -1,5 +1,7 @@
 'use strict';
 
+const args = require('yargs').argv;
+
 const Twitter = require('twitter');
 require('dotenv').config();
 
@@ -10,7 +12,7 @@ var client = new Twitter({
 	access_token_secret: process.env.TOKENSECRET
 });
 
-var twuser = 'inspire_us'; // twitter user
+var twuser = args.username || 'inspire_us'; // twitter user
 
 var statuses = 'https://api.twitter.com/1.1/statuses/user_timeline.json?count=5'; // count - list the no of tweets you want to Display
    
