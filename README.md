@@ -25,7 +25,7 @@
 git clone https://github.com/mskian/get-tweets.git
 cd get-tweets
 npm install
-touch .env
+rename .env.example to .env
 ```
 
 - Add your Twitter APP's Tokens and Keys in .env File
@@ -37,19 +37,21 @@ TOKEN = <ACCESS TOKEN KEY>
 TOKENSECRET = <ACCESS TOKEN SECRET>
 ```
 
-- Execute the Script
+- Execute the Script with Arguments
 
 ```
-node app.js
+node app.js --username twitter_username
 ```
+
+Defaults to twitter username `inspire_us` if no arguments are supplied.
+
+
 
 ## Customization
 
 File `app.js`
 
 ```javascript
-var twuser = 'inspire_us'; // twitter user
-
 var statuses = 'https://api.twitter.com/1.1/statuses/user_timeline.json?count=10'; // count - list the no of tweets you want to Display
 ```
 
