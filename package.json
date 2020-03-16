@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/mskian/get-tweets/#readme",
   "dependencies": {
-    "dotenv": "^6.0.0",
+    "dotenv": "^8.2.0",
     "twitter": "^1.7.1",
-    "yargs": "^14.2.0"
+    "yargs": "^15.3.0"
   }
 }
